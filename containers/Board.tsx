@@ -28,6 +28,7 @@ function Board() {
     setSquares(newData);
     setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
   }
+
   //CHECKING FOR THE WINNER EVERYTIME SQUARES UPDATE
   useEffect(() => {
     const w = calculateWinner(squares);
@@ -42,12 +43,10 @@ function Board() {
 
   //RETURNING UI
   return (
-    <div>
+    <div className="board">
       {!winner && <h1>Hey {currentPlayer}, it is your turn</h1>}
-      {winner && winner !== "BOTH" && <h2>Congratulations {winner}</h2>}
-      {winner && winner === "BOTH" && (
-        <h2>Congratulations you are both winners</h2>
-      )}
+      {winner && winner !== "BOTH" && <h1>Congratulations {winner}!</h1>}
+      {winner && winner === "BOTH" && <h1>It is a tie!</h1>}
 
       <div className="grid">
         {Array(9)

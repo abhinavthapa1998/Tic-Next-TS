@@ -4,7 +4,7 @@ import Board from "../containers/Board";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>Tic-Tac-Toe</title>
         <meta
@@ -13,6 +13,10 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div className="stars"></div>
+      <div className="clouds"></div>
+      <div className="twinkling"></div>
       <Board />
     </div>
   );
