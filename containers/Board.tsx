@@ -55,14 +55,14 @@ function Board() {
     if (!w && !squares.filter((square) => !square).length) {
       setWinner("BOTH");
     }
-  });
+  }, [squares]);
 
   return (
     <div>
-      {!winner && <p>Hey {currentPlayer}, it is your turn</p>}
-      {winner && winner !== "BOTH" && <p>Congratulations {winner}</p>}
+      {!winner && <h1>Hey {currentPlayer}, it is your turn</h1>}
+      {winner && winner !== "BOTH" && <h2>Congratulations {winner}</h2>}
       {winner && winner === "BOTH" && (
-        <p>Congratulations you are both winners</p>
+        <h2>Congratulations you are both winners</h2>
       )}
 
       <div className="grid">
