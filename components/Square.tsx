@@ -1,5 +1,6 @@
+//DEFINING A TYPE
 type Player = "X" | "O" | "BOTH" | null;
-
+//PROVIDING THE TYPE FOR THE INCOMING PROPS
 function Square({
   value,
   onClick,
