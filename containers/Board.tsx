@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Square from "../components/Square";
 import calculateWinner from "../logic/Calculate";
+import Image from "next/image";
 type Player = "X" | "O" | "BOTH" | null;
 
 function Board() {
@@ -65,6 +66,15 @@ function Board() {
       <button className="reset" onClick={reset}>
         RESET
       </button>
+      <div className="git">
+        <a
+          href="https://github.com/abhinavthapa1998"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image src="/github.png" alt="image" width="70px" height="70px" />
+        </a>
+      </div>
     </div>
   );
 }

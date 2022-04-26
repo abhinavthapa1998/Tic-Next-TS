@@ -67,7 +67,18 @@ h1 {
 p {
   font-size: 2rem;
 }
-
+.git {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.git img {
+  transition: 0.1s ease all;
+}
+.git img:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
 /* ANIMATED BACKGROUND */
 @keyframes move-twink-back {
   from {

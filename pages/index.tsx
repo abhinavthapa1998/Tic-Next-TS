@@ -11,7 +11,7 @@ const Home: NextPage = () => {
           name="Tic Tac Toe App"
           content="Created using Next and Typescript"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/tic.ico" />
       </Head>
 
       <div className="stars"></div>
